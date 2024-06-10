@@ -1,0 +1,233 @@
+* {
+    /* fazer com que a borda seja parte da dimensão */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.conteudo {
+    display: flex;
+    align-items: stretch;
+    clear: both;
+}
+
+p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      color: rgb(22, 33, 20);
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+    background: url(Imagens/Por_do_sol.jpg);
+    background-size: cover;
+    border-bottom: solid rgb(22, 33, 20) 2px;
+}
+
+#sobre {
+    width: 100%;
+    height: 100vh;
+}
+#sobreEsq {
+    height: 100vh;
+    background-color: rgb(41, 65, 34);
+    flex-grow: 1;
+    border-right: solid rgb(22, 33, 20) 2px;
+}
+#sobreDir {
+    height: 100vh;
+    background-color: rgb(255, 237, 210);
+    flex-grow: 1;
+    padding: 60px;
+}
+
+#cinema {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(235, 61, 0);
+}
+
+#arte {
+    width: 100%;
+    height: 100vh;
+}
+#arteEsq {
+    height: 100vh;
+    flex-grow: 2;
+    background-color: rgb(255, 187, 166);
+}
+#arteDir {
+    height: 100vh;
+    flex-grow: 4;
+    background: url(Imagens/Parede.JPG);
+    background-size: cover;
+    border-left: solid rgb(22, 33, 20) 2px;
+    border-top: solid rgb(22, 33, 20) 2px;
+    padding: 60px;
+}
+
+#foto {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 237, 210);
+}
+
+a {
+    color: rgb(255, 237, 210);
+}
+
+#menu {
+    background-color: rgb(22, 33, 20);
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#menu ul {
+    list-style: none; /*tirar os bulets da lista*/
+}
+#menu ul, li {
+    display:inline-block; /* colocar o menu na horizontal*/
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: solid rgb(255, 237, 210) 2px;
+}
+
+#imagem, #caixadetexto {
+    float: left;
+}
+#imagem{
+    padding-top: 100px;
+    height: 100vh;
+    text-align: center;
+
+}
+#imagem img {
+    border-radius: 30px;
+    border: solid rgb(22, 33, 20) 2px;
+  }
+img {
+    border: solid rgb(22, 33, 20) 2px;
+    border-radius: 5px;
+  }
+
+#tituloCapa {
+    text-align: center;
+    padding-top: 300px;
+    font-size: 200px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 237, 210);
+}
+.subtitulo {
+    padding: 30px;
+    color: rgb(255, 237, 210);
+    text-align: center;
+    font-size: x-large;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+      
+}
+
+#tituloSobre {
+    text-transform: uppercase;
+    font-size: 150px;
+    padding: 60px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(41, 65, 34);
+    border-bottom: solid rgb(22, 33, 20) 2px;
+}
+
+#tituloCine {
+    font-size: 150px; 
+    text-align: center;
+    padding-top: 60px;
+    background-color: rgb(255, 187, 166);
+    color: rgb(41, 65, 34);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: solid rgb(22, 33, 20) 2px;
+    border-top: solid rgb(22, 33, 20) 2px;
+}
+
+#videos {
+    padding: 30px;
+    text-align: center;
+}
+
+#tituloArte {
+    font-size: 150px;
+    text-align: center;
+    padding-top: 60px;
+    background-color: rgb(41, 65, 34);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 237, 210);
+    border-bottom: solid rgb(22, 33, 20) 2px;
+    border-top: solid rgb(22, 33, 20) 2px;
+}
+.corpo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(255, 237, 210); 
+}
+
+#tituloFoto {
+    font-size: 150px;
+    text-align: center;
+    padding-top: 60px;
+    border-bottom: solid rgb(22, 33, 20) 2px;
+    border-top: solid rgb(22, 33, 20) 2px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(22, 33, 20);
+}
+.flex-container{
+    display: flex;
+}
+.flex-item{
+    margin: 20px;
+    padding: 5px;
+    flex-grow: 3;
+    text-align: center;
+}
+
+#rodape{
+    background-color: rgb(22, 33, 20);
+    color: rgb(255, 237, 210);
+    width: 100%;
+    height: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#contato{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    padding-left: 60px;
+    padding-top: 20px;
+    flex-grow: 1;
+}
+.nav ul, li{
+    padding-right: 60px;
+    border-right: rgb(22, 33, 20);
+    padding-bottom: 20px;
+}
